@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+    table{
+        width: 1190px;
+        height: 200px;
+        text-align: center;
+        font-size: 16px;
+    }
+    a{
+        color: brown;
+        font-size: 18px;
+    }
+#search_text{
+    margin-left: -8px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid brown;
+}
+  #search_button{
+        width:150px;
+        height: 30px;
+        margin-left: 20px;
+        background-color: brown;
+        color: white;
+        font-size: 17px;
+    }
+</style>
+<body>
+<table frame="hsides" rules="all" id="ta">
+    <tr>
+        <td colspan="5" style="text-align: left;">
+            <input type="button" value="查&nbsp;询" id="search_button">
+            <input type="text" id="search_text" placeholder="find...(根据用户名)">
+        </td>
+    </tr>
+    <tr>
+        <td>选择</td>
+        <td>username</td>
+        <td>password</td>
+        <td>email</td>
+        <td>path</td>
+    </tr>
+</table>
+<div style="margin-left: 450px; margin-top: 40px;">
+    <a href="#" id="selectUserfirst">首页</a>
+    <a href="#" id="selectUserforward">上一页</a>
+    <a href="#" id="selectUsernextpage">下一页</a>
+    <a href="#" id="selectUsertotal">尾页</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/User.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+<style>
+    table{
+        border: 1px  solid brown;
+        width: 1190px;
+        height: 200px;
+        text-align: center;
+        font-size: 16px;
+    }
+    td{
+        width: 100px;
+        height: 50px;
+    }
+    .fanye a{
+        color: brown;
+        font-size: 18px;
+    }
+#search_text{
+    margin-left: -8px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid brown;
+}
+  #search_button{
+        width:150px;
+        height: 30px;
+        margin-left: 20px;
+        background-color: brown;
+        color: white;
+        font-size: 17px;
+    }
+</style>
+<body>
+<table id="ta" frame="hsides" rules="all">
+    <tr>
+        <td colspan="7" style="text-align: left;">
+            <input type="button" value="查&nbsp;询" id="search_button">
+            <input type="text" id="search_text" placeholder="find...(根据用户名)">
+        </td>
+    </tr>
+    <tr>
+        <td><a href="#" id="selectallUser">全选</a></td>
+        <td>姓名</td>
+        <td>密码</td>
+        <td>邮箱</td>
+        <td>头像</td>
+        <td>编辑</td>
+        <td>删除</td>
+    </tr>
+</table>
+<div style="margin-left: 450px; margin-top: 40px;" class="fanye">
+    <a href="#" id="first">首页</a>
+    <a href="#" id="forward">上一页</a>
+    <a href="#" id="nextpage">下一页</a>
+    <a href="#" id="total">尾页</a>
+</div>
+</body>
+</html>

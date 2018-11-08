@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       table{
+            width: 1190px;
+            height: 200px;
+            text-align: center;
+            font-size: 16px;
+        }
+      .fanye a{
+            color: brown;
+            font-size: 18px;
+        }
+        td{
+            width: 300px;
+            height:60px;
+        }
+    </style>
+    <script type="text/javascript">
+        document.getElementById("selectallPage").addEventListener("click",()=>{
+            Array.from(document.getElementsByClassName("Page")).forEach((item)=>{
+                if(item.checked==false){
+                    item.checked=true;
+                    document.getElementById("selectallPage").innerHTML="全不选";
+                }else{
+                    item.checked=false;
+                    document.getElementById("selectallPage").innerHTML="全选";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<table frame="hsides" rules="all" id="ta">
+    <tr>
+        <td style="width: 30px;"><a href="#" id="selectallPage">全选</a></td>
+        <td>id</td>
+        <td>标题</td>
+        <td>时间</td>
+        <td>编辑</td>
+        <td>删除</td>
+    </tr>
+</table>
+<div style="margin-left: 450px; margin-top: 40px;" class="fanye">
+    <a href="#" id="firstBlog">首页</a>
+    <a href="#" id="forwardBlog">上一页</a>
+    <a href="#" id="nextBlogPage">下一页</a>
+    <a href="#" id="totalBlog">尾页</a>
+</div>
+</body>
+</html>

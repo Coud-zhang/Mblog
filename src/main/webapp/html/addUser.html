@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="../js/addUser.js" type="text/javascript" charset="UTF-8"></script>
+    <style type="text/css">
+        table{
+            border: 0px;
+            margin: 20px auto;
+        }
+        input{
+            margin: 10px auto;
+            width: 600px;
+            height: 30px;
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+<body>
+<fieldset style="border: 0px;">
+    <table>
+        <thead>
+        <tr>
+            <td colspan="3" style="text-align: center;font-size: 18px;font-weight: bold;">注册用户</td>
+        </tr>
+        </thead>
+        <tbody style="margin-top: 30px">
+        <tr>
+            <td><label for="username">用户名</label></td>
+            <td><input type="text" id="username"></td>
+            <td id="testUserName" style="color: brown;font-weight: bold;font-size: 18px;"></td>
+        </tr>
+        <tr>
+            <td><label for="password">密&nbsp;码</label></td>
+            <td><input type="text" id="password"></td>
+            <td id="testPassword" style="color: brown;font-weight: bold;font-size: 18px;"></td>
+        </tr>
+        <tr>
+            <td><label for="repassword">再输一次</label></td>
+            <td><input type="text" id="repassword"></td>
+            <td id="reTestpassword" style="color: brown;font-weight: bold;font-size: 18px;"></td>
+        </tr>
+        <tr>
+            <td><label for="email">邮&nbsp;箱</label></td>
+            <td><input type="text" id="email"></td>
+            <td id="Testemail" style="color: brown;font-weight: bold;font-size: 18px;"></td>
+        </tr>
+        <tr>
+            <td><label for="email">用户权限</label></td>
+            <td>
+                <select id="quanxian">
+                    <option value="plase">--请选择--</option>
+                    <option value="超级管理员">超级管理员</option>
+                    <option value="管理员">管理员</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="button" value="注&nbsp;册" style="margin-left: 60px;font-size: 20px; color: brown;" id="submit">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</fieldset>
+</body>
+</html>

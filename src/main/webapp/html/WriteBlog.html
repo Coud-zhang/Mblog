@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/WriteBlog.css" type="text/css" rel="stylesheet">
+    <link href="../editormd/css/editormd.min.css" type="text/css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../editormd/src/editormd.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/writeblog.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="big">
+    <form action="../InsertBlogServlet" method="post">
+        <div id="biaoti">
+            <div style="margin-left: 20px;width: 900px;height: 100%;">
+                <label for="bt" style="font-size: 18px;font-weight: bold;color: brown;margin-left: 20px;">标题</label>
+                <input type="text" id="bt" name="bt">
+            </div>
+        </div>
+        <div id="insertdiv">
+            <div style="font-size: 18px;font-weight: bold;color: brown; width: 70px;height: 70px;margin-left: 38px;">内容：</div>
+            <div id="insert" style="margin-left:94px; margin-top: -40px;">
+                <textarea class="editormd-markdown-textarea" name="test-editormd-markdown-doc"></textarea>
+                <!-- 第二个隐藏文本域，用来构造生成的HTML代码，方便表单POST提交，这里的name可以任意取，后台接受时以这个name键为准
+                但是推荐保存MarkDown格式的文章到数据库中
+                -->
+                <textarea class="editormd-html-textarea" name="insert-text"></textarea>
+            </div>
+        </div>
+        <div class="tj">
+            <input type="submit" value="提 交 博 客" class="tijiao">
+        </div>
+    </form>
+</div>
+</body>
+</html>
